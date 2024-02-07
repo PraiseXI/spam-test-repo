@@ -1,0 +1,18 @@
+name: Automate PR Labeling and Commenting
+
+on: [pull_request]
+
+jobs:
+  label-and-comment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Label and Comment PRs
+      uses: PraiseXI/AntiSpamPRLabeler@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        max-changes-for-label: '2' # Optional, default is 2
+        label-message: 'This PR has been flagged for spam' 
+        # Optional, your custom message here
