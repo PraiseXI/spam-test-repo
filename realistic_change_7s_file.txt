@@ -1,0 +1,5 @@
+This is the base line of the file.
+Each of these lines represents a placeholder for content. Variation: 2 Change: 0
+Modifications will occur below to simulate realistic changes.
+Line four remains constant across variations. Variation: 2 Change: 4
+Final base line before variations are applied. Variation: 2 Change: 3
